@@ -1,0 +1,177 @@
+2026-01-21T04:40:48.362Z [INFO] Prechecking project springapp...
+2026-01-21T04:40:48.363Z [INFO] Prechecking build status...
+2026-01-21T04:41:05.309Z [INFO] Prechecking CVEs...
+2026-01-21T04:41:22.844Z [INFO] Prechecking tests...
+2026-01-21T04:41:22.845Z [INFO] Run tests before upgrading...
+2026-01-21T04:42:26.370Z [INFO] Prepare initial state...
+2026-01-21T04:42:26.371Z [INFO] [Project springapp]: getting project state.
+2026-01-21T04:42:26.372Z [INFO] [Project springapp]: getting Java version.
+2026-01-21T04:42:26.372Z [INFO] [Project springapp]: got Java version: 17
+2026-01-21T04:42:26.374Z [INFO] [Project springapp]: getting dependencies promise.
+2026-01-21T04:42:26.378Z [INFO] Project initial state: {
+  "javaVersion": "17",
+  "dependencies": [
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-mongodb",
+      "type": "jar",
+      "version": "4.0.1",
+      "scope": "compile",
+      "module": "bhasharakshak"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-restclient",
+      "type": "jar",
+      "version": "4.0.1",
+      "scope": "compile",
+      "module": "bhasharakshak"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-security",
+      "type": "jar",
+      "version": "4.0.1",
+      "scope": "compile",
+      "module": "bhasharakshak"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-validation",
+      "type": "jar",
+      "version": "4.0.1",
+      "scope": "compile",
+      "module": "bhasharakshak"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-webmvc",
+      "type": "jar",
+      "version": "4.0.1",
+      "scope": "compile",
+      "module": "bhasharakshak"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-websocket",
+      "type": "jar",
+      "version": "4.0.1",
+      "scope": "compile",
+      "module": "bhasharakshak"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-devtools",
+      "type": "jar",
+      "version": "4.0.1",
+      "scope": "runtime",
+      "module": "bhasharakshak"
+    },
+    {
+      "groupId": "org.projectlombok",
+      "artifactId": "lombok",
+      "type": "jar",
+      "version": "1.18.42",
+      "scope": "compile",
+      "module": "bhasharakshak"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-mongodb-test",
+      "type": "jar",
+      "version": "4.0.1",
+      "scope": "test",
+      "module": "bhasharakshak"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-restclient-test",
+      "type": "jar",
+      "version": "4.0.1",
+      "scope": "test",
+      "module": "bhasharakshak"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-security-test",
+      "type": "jar",
+      "version": "4.0.1",
+      "scope": "test",
+      "module": "bhasharakshak"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-validation-test",
+      "type": "jar",
+      "version": "4.0.1",
+      "scope": "test",
+      "module": "bhasharakshak"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-webmvc-test",
+      "type": "jar",
+      "version": "4.0.1",
+      "scope": "test",
+      "module": "bhasharakshak"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-websocket-test",
+      "type": "jar",
+      "version": "4.0.1",
+      "scope": "test",
+      "module": "bhasharakshak"
+    },
+    {
+      "groupId": "java",
+      "artifactId": "*",
+      "version": "17"
+    }
+  ],
+  "buildResult": {
+    "numOfJavaFiles": 2,
+    "numOfClassFiles": 2,
+    "modulesBuildResult": {
+      ".": {
+        "numOfJavaFiles": 2,
+        "numOfClassFiles": 2
+      }
+    },
+    "errors": [],
+    "command": "mvnw clean test-compile -q -B -fn"
+  },
+  "testResult": {
+    "errors": [],
+    "failures": [],
+    "summary": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "reports": [
+      {
+        "name": "com.bhasharakshak.BhasharakshakApplicationTests",
+        "time": 6.317,
+        "tests": 1,
+        "errors": 0,
+        "skipped": 0,
+        "failures": 0,
+        "testcases": [
+          {
+            "name": "contextLoads",
+            "classname": "com.bhasharakshak.BhasharakshakApplicationTests",
+            "time": 1.389,
+            "failures": [],
+            "rerunFailures": [],
+            "flakyFailures": [],
+            "errors": [],
+            "rerunErrors": [],
+            "flakyErrors": []
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,407 @@
+2026-01-21T04:40:19.892Z [INFO] validate plan and setup env from plan.md file...
+2026-01-21T04:40:19.894Z [INFO] getLLMClient: validating user selected model "auto"
+2026-01-21T04:40:25.834Z [INFO] Model auto is not valid: Error: Endpoint not found for model auto
+2026-01-21T04:40:25.835Z [WARN] getLLMClient: provided model "auto" is not valid.
+2026-01-21T04:40:25.836Z [WARN] getLLMClient: no user selected model provided, try using default model: claude-sonnet-4
+2026-01-21T04:40:28.209Z [INFO] Available models: gpt-5-mini, gpt-4o-mini, copilot-fast, gpt-4o, claude-haiku-4.5, gpt-4.1, oswe-vscode-prime, auto
+2026-01-21T04:40:28.211Z [INFO] Finding chat model from candidates: claude-sonnet-4, claude-3.5-sonnet, claude-3.7-sonnet, gpt-4.1, gpt-4o, gpt-4o-mini
+2026-01-21T04:40:29.302Z [INFO] Model gpt-4.1 is selected.
+2026-01-21T04:40:29.303Z [INFO] parsing plan.md...
+2026-01-21T04:40:31.953Z [INFO] Successfully parsed plan.md to JSON:
+2026-01-21T04:40:31.954Z [INFO] {
+  "projectConfig": {
+    "name": "springapp",
+    "dir": "c:\\Users\\mugun\\OneDrive\\Desktop\\BashrakAi\\bhasharakshak-ai\\backend\\springapp",
+    "jdk": {
+      "name": "java",
+      "path": "C:\\Program Files\\Java\\jdk-17\\bin",
+      "version": "17"
+    },
+    "buildTool": {
+      "name": "mvnw",
+      "path": "c:\\Users\\mugun\\OneDrive\\Desktop\\BashrakAi\\bhasharakshak-ai\\backend\\springapp",
+      "version": "",
+      "defaultOptions": ""
+    }
+  },
+  "upgradeOptions": {
+    "target": {
+      "javaVersion": "21",
+      "dependencies": [],
+      "jdk": {
+        "name": "java",
+        "path": "C:\\Program Files\\Java\\jdk-21\\bin",
+        "version": "21"
+      }
+    },
+    "guidelines": "",
+    "workingBranch": "appmod/java-upgrade-20260121043246",
+    "runTests": true
+  }
+}
+2026-01-21T04:40:31.955Z [INFO] Project c:\Users\mugun\OneDrive\Desktop\BashrakAi\bhasharakshak-ai\backend\springapp is a maven project, try to get java version from pom.xml
+2026-01-21T04:40:31.957Z [INFO] Project java version: 17
+2026-01-21T04:40:31.958Z [INFO] Build tool type: mvnw
+2026-01-21T04:40:31.959Z [INFO] [Environment] Running command (Java 17): java -version
+java version "17.0.12" 2024-07-16 LTS
+Java(TM) SE Runtime Environment (build 17.0.12+8-LTS-286)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.12+8-LTS-286, mixed mode, sharing)
+2026-01-21T04:40:32.222Z [INFO] [JdkEnvironment] Got real Java version: 17.0.12
+2026-01-21T04:40:32.223Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Program Files\\Java\\jdk-17\\bin",
+  "version": "17"
+}
+2026-01-21T04:40:32.242Z [INFO] [Environment] Running command (Java 17): mvnw --version
+Apache Maven 3.9.12 (848fbb4bf2d427b72bdb2471c22fced7ebd9a7a1)
+Maven home: C:\Users\mugun\.m2\wrapper\dists\apache-maven-3.9.12\59fe215c0ad6947fea90184bf7add084544567b927287592651fda3782e0e798
+Java version: 17.0.12, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-17
+Default locale: en_IN, platform encoding: Cp1252
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+2026-01-21T04:40:33.512Z [INFO] Real build tool version: 3.9.12
+2026-01-21T04:40:33.512Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": "c:\\Users\\mugun\\OneDrive\\Desktop\\BashrakAi\\bhasharakshak-ai\\backend\\springapp",
+  "version": "3.9.12"
+}
+2026-01-21T04:40:33.513Z [INFO] Project config: {
+  "name": "springapp",
+  "dir": "c:\\Users\\mugun\\OneDrive\\Desktop\\BashrakAi\\bhasharakshak-ai\\backend\\springapp",
+  "jdk": {
+    "name": "java",
+    "path": "C:\\Program Files\\Java\\jdk-17\\bin",
+    "version": "17"
+  },
+  "buildTool": {
+    "name": "mvnw",
+    "path": "c:\\Users\\mugun\\OneDrive\\Desktop\\BashrakAi\\bhasharakshak-ai\\backend\\springapp",
+    "version": "3.9.12",
+    "defaultOptions": ""
+  }
+}
+2026-01-21T04:40:33.514Z [INFO] [Project springapp]: getting Java version.
+2026-01-21T04:40:33.514Z [INFO] [Project springapp]: reset Java version promise.
+2026-01-21T04:40:33.514Z [INFO] [MavenBuildTool] Getting Java version of c:\Users\mugun\OneDrive\Desktop\BashrakAi\bhasharakshak-ai\backend\springapp from pom.xml
+2026-01-21T04:40:33.515Z [INFO] [MavenBuildTool] Searching for pom.xml files in c:\Users\mugun\OneDrive\Desktop\BashrakAi\bhasharakshak-ai\backend\springapp
+2026-01-21T04:40:33.515Z [INFO] [MavenBuildTool] Getting all module coordinates of c:\Users\mugun\OneDrive\Desktop\BashrakAi\bhasharakshak-ai\backend\springapp
+2026-01-21T04:40:33.515Z [INFO] [MavenBuildTool] Getting effective POMs of c:\Users\mugun\OneDrive\Desktop\BashrakAi\bhasharakshak-ai\backend\springapp
+2026-01-21T04:40:33.524Z [INFO] [Environment] Running command (Java 17): mvnw help:effective-pom -Doutput=effective-pom-ebd0efb3-f60e-4edc-a50b-205a234f733c.log
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com:bhasharakshak >--------------------------
+[INFO] Building bhasharakshak 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- help:3.5.1:effective-pom (default-cli) @ bhasharakshak ---
+[INFO] Effective-POM written to: c:\Users\mugun\OneDrive\Desktop\BashrakAi\bhasharakshak-ai\backend\springapp\effective-pom-ebd0efb3-f60e-4edc-a50b-205a234f733c.log
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.495 s
+[INFO] Finished at: 2026-01-21T10:10:38+05:30
+[INFO] ------------------------------------------------------------------------
+2026-01-21T04:40:38.929Z [INFO] [MavenBuildTool] Found pom.xml files: c:\Users\mugun\OneDrive\Desktop\BashrakAi\bhasharakshak-ai\backend\springapp\pom.xml
+2026-01-21T04:40:38.932Z [INFO] [MavenBuildTool] Java version found in c:\Users\mugun\OneDrive\Desktop\BashrakAi\bhasharakshak-ai\backend\springapp\pom.xml: 17
+2026-01-21T04:40:38.933Z [INFO] [Project springapp]: got Java version: 17
+2026-01-21T04:40:38.933Z [INFO] Source Java version: 17
+2026-01-21T04:40:38.934Z [INFO] [Project springapp]: getting dependencies promise.
+2026-01-21T04:40:38.934Z [INFO] [Project springapp]: reset dependencies promise.
+2026-01-21T04:40:38.936Z [INFO] [Environment] Running command (Java 17): mvnw dependency:tree -B
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com:bhasharakshak >--------------------------
+[INFO] Building bhasharakshak 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.9.0:tree (default-cli) @ bhasharakshak ---
+[INFO] com:bhasharakshak:jar:0.0.1-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-mongodb:jar:4.0.1:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:4.0.1:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:4.0.1:compile
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.5.22:compile
+[INFO] |  |  |  |  \- ch.qos.logback:logback-core:jar:1.5.22:compile
+[INFO] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.25.3:compile
+[INFO] |  |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.25.3:compile
+[INFO] |  |  |  \- org.slf4j:jul-to-slf4j:jar:2.0.17:compile
+[INFO] |  |  +- jakarta.annotation:jakarta.annotation-api:jar:3.0.0:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:2.5:compile
+[INFO] |  +- org.springframework.boot:spring-boot-mongodb:jar:4.0.1:compile
+[INFO] |  \- org.mongodb:mongodb-driver-sync:jar:5.6.2:compile
+[INFO] |     +- org.mongodb:bson:jar:5.6.2:compile
+[INFO] |     \- org.mongodb:mongodb-driver-core:jar:5.6.2:compile
+[INFO] |        \- org.mongodb:bson-record-codec:jar:5.6.2:runtime
+[INFO] +- org.springframework.boot:spring-boot-starter-restclient:jar:4.0.1:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-jackson:jar:4.0.1:compile
+[INFO] |  |  \- org.springframework.boot:spring-boot-jackson:jar:4.0.1:compile
+[INFO] |  |     \- tools.jackson.core:jackson-databind:jar:3.0.3:compile
+[INFO] |  |        +- com.fasterxml.jackson.core:jackson-annotations:jar:2.20:compile
+[INFO] |  |        \- tools.jackson.core:jackson-core:jar:3.0.3:compile
+[INFO] |  \- org.springframework.boot:spring-boot-restclient:jar:4.0.1:compile
+[INFO] |     \- org.springframework.boot:spring-boot-http-client:jar:4.0.1:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-security:jar:4.0.1:compile
+[INFO] |  +- org.springframework.boot:spring-boot-security:jar:4.0.1:compile
+[INFO] |  |  +- org.springframework.security:spring-security-config:jar:7.0.2:compile
+[INFO] |  |  |  \- org.springframework.security:spring-security-core:jar:7.0.2:compile
+[INFO] |  |  |     \- org.springframework.security:spring-security-crypto:jar:7.0.2:compile
+[INFO] |  |  \- org.springframework.security:spring-security-web:jar:7.0.2:compile
+[INFO] |  |     \- org.springframework:spring-expression:jar:7.0.2:compile
+[INFO] |  \- org.springframework:spring-aop:jar:7.0.2:compile
+[INFO] |     +- org.springframework:spring-beans:jar:7.0.2:compile
+[INFO] |     \- org.springframework:spring-core:jar:7.0.2:compile
+[INFO] |        +- commons-logging:commons-logging:jar:1.3.5:compile
+[INFO] |        \- org.jspecify:jspecify:jar:1.0.0:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-validation:jar:4.0.1:compile
+[INFO] |  \- org.springframework.boot:spring-boot-validation:jar:4.0.1:compile
+[INFO] |     +- org.apache.tomcat.embed:tomcat-embed-el:jar:11.0.15:compile
+[INFO] |     \- org.hibernate.validator:hibernate-validator:jar:9.0.1.Final:compile
+[INFO] |        +- jakarta.validation:jakarta.validation-api:jar:3.1.1:compile
+[INFO] |        +- org.jboss.logging:jboss-logging:jar:3.6.1.Final:compile
+[INFO] |        \- com.fasterxml:classmate:jar:1.7.1:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-webmvc:jar:4.0.1:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:4.0.1:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-tomcat-runtime:jar:4.0.1:compile
+[INFO] |  |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:11.0.15:compile
+[INFO] |  |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:11.0.15:compile
+[INFO] |  |  \- org.springframework.boot:spring-boot-tomcat:jar:4.0.1:compile
+[INFO] |  +- org.springframework.boot:spring-boot-http-converter:jar:4.0.1:compile
+[INFO] |  |  \- org.springframework:spring-web:jar:7.0.2:compile
+[INFO] |  |     \- io.micrometer:micrometer-observation:jar:1.16.1:compile
+[INFO] |  |        \- io.micrometer:micrometer-commons:jar:1.16.1:compile
+[INFO] |  \- org.springframework.boot:spring-boot-webmvc:jar:4.0.1:compile
+[INFO] |     +- org.springframework.boot:spring-boot-servlet:jar:4.0.1:compile
+[INFO] |     \- org.springframework:spring-webmvc:jar:7.0.2:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-websocket:jar:4.0.1:compile
+[INFO] |  \- org.springframework.boot:spring-boot-websocket:jar:4.0.1:compile
+[INFO] |     +- org.springframework:spring-messaging:jar:7.0.2:compile
+[INFO] |     \- org.springframework:spring-websocket:jar:7.0.2:compile
+[INFO] +- org.springframework.boot:spring-boot-devtools:jar:4.0.1:runtime (optional)
+[INFO] |  +- org.springframework.boot:spring-boot:jar:4.0.1:compile
+[INFO] |  |  \- org.springframework:spring-context:jar:7.0.2:compile
+[INFO] |  \- org.springframework.boot:spring-boot-autoconfigure:jar:4.0.1:compile
+[INFO] +- org.projectlombok:lombok:jar:1.18.42:compile (optional)
+[INFO] +- org.springframework.boot:spring-boot-starter-mongodb-test:jar:4.0.1:test
+[INFO] |  \- org.springframework.boot:spring-boot-starter-test:jar:4.0.1:test
+[INFO] |     +- org.springframework.boot:spring-boot-test:jar:4.0.1:test
+[INFO] |     +- org.springframework.boot:spring-boot-test-autoconfigure:jar:4.0.1:test
+[INFO] |     +- com.jayway.jsonpath:json-path:jar:2.10.0:test
+[INFO] |     |  \- org.slf4j:slf4j-api:jar:2.0.17:compile
+[INFO] |     +- jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.4:test
+[INFO] |     |  \- jakarta.activation:jakarta.activation-api:jar:2.1.4:test
+[INFO] |     +- net.minidev:json-smart:jar:2.6.0:test
+[INFO] |     |  \- net.minidev:accessors-smart:jar:2.6.0:test
+[INFO] |     |     \- org.ow2.asm:asm:jar:9.7.1:test
+[INFO] |     +- org.assertj:assertj-core:jar:3.27.6:test
+[INFO] |     |  \- net.bytebuddy:byte-buddy:jar:1.17.8:test
+[INFO] |     +- org.awaitility:awaitility:jar:4.3.0:test
+[INFO] |     +- org.hamcrest:hamcrest:jar:3.0:test
+[INFO] |     +- org.junit.jupiter:junit-jupiter:jar:6.0.1:test
+[INFO] |     |  +- org.junit.jupiter:junit-jupiter-api:jar:6.0.1:test
+[INFO] |     |  |  +- org.opentest4j:opentest4j:jar:1.3.0:test
+[INFO] |     |  |  +- org.junit.platform:junit-platform-commons:jar:6.0.1:test
+[INFO] |     |  |  \- org.apiguardian:apiguardian-api:jar:1.1.2:test
+[INFO] |     |  +- org.junit.jupiter:junit-jupiter-params:jar:6.0.1:test
+[INFO] |     |  \- org.junit.jupiter:junit-jupiter-engine:jar:6.0.1:test
+[INFO] |     |     \- org.junit.platform:junit-platform-engine:jar:6.0.1:test
+[INFO] |     +- org.mockito:mockito-core:jar:5.20.0:test
+[INFO] |     |  +- net.bytebuddy:byte-buddy-agent:jar:1.17.8:test
+[INFO] |     |  \- org.objenesis:objenesis:jar:3.3:test
+[INFO] |     +- org.mockito:mockito-junit-jupiter:jar:5.20.0:test
+[INFO] |     +- org.skyscreamer:jsonassert:jar:1.5.3:test
+[INFO] |     |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |     +- org.springframework:spring-test:jar:7.0.2:test
+[INFO] |     \- org.xmlunit:xmlunit-core:jar:2.10.4:test
+[INFO] +- org.springframework.boot:spring-boot-starter-restclient-test:jar:4.0.1:test
+[INFO] |  +- org.springframework.boot:spring-boot-starter-jackson-test:jar:4.0.1:test
+[INFO] |  \- org.springframework.boot:spring-boot-restclient-test:jar:4.0.1:test
+[INFO] +- org.springframework.boot:spring-boot-starter-security-test:jar:4.0.1:test
+[INFO] |  \- org.springframework.boot:spring-boot-security-test:jar:4.0.1:test
+[INFO] |     \- org.springframework.security:spring-security-test:jar:7.0.2:test
+[INFO] +- org.springframework.boot:spring-boot-starter-validation-test:jar:4.0.1:test
+[INFO] +- org.springframework.boot:spring-boot-starter-webmvc-test:jar:4.0.1:test
+[INFO] |  +- org.springframework.boot:spring-boot-webmvc-test:jar:4.0.1:test
+[INFO] |  |  \- org.springframework.boot:spring-boot-web-server:jar:4.0.1:compile
+[INFO] |  \- org.springframework.boot:spring-boot-resttestclient:jar:4.0.1:test
+[INFO] \- org.springframework.boot:spring-boot-starter-websocket-test:jar:4.0.1:test
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.697 s
+[INFO] Finished at: 2026-01-21T10:10:46+05:30
+[INFO] ------------------------------------------------------------------------
+2026-01-21T04:40:46.602Z [INFO] [MavenBuildTool] Successfully got dependency tree of c:\Users\mugun\OneDrive\Desktop\BashrakAi\bhasharakshak-ai\backend\springapp
+2026-01-21T04:40:46.603Z [INFO] [MavenBuildTool] Getting Java version of c:\Users\mugun\OneDrive\Desktop\BashrakAi\bhasharakshak-ai\backend\springapp from pom.xml
+2026-01-21T04:40:46.603Z [INFO] [MavenBuildTool] Searching for pom.xml files in c:\Users\mugun\OneDrive\Desktop\BashrakAi\bhasharakshak-ai\backend\springapp
+2026-01-21T04:40:46.604Z [INFO] [MavenBuildTool] Found pom.xml files: c:\Users\mugun\OneDrive\Desktop\BashrakAi\bhasharakshak-ai\backend\springapp\pom.xml
+2026-01-21T04:40:46.605Z [INFO] [MavenBuildTool] Java version found in c:\Users\mugun\OneDrive\Desktop\BashrakAi\bhasharakshak-ai\backend\springapp\pom.xml: 17
+2026-01-21T04:40:46.605Z [INFO] validateAndUpdateTargets, targets: [object Object]
+2026-01-21T04:40:46.606Z [WARN] Upgrading project with Spring Boot 4.0.1 is not supported.
+2026-01-21T04:40:46.607Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Spring Boot
+2026-01-21T04:40:46.608Z [WARN] No source dependencies found for Spring Framework. Skipping target dependency validation
+2026-01-21T04:40:46.608Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Spring Framework
+2026-01-21T04:40:46.609Z [WARN] No source dependencies found for Spring Security. Skipping target dependency validation
+2026-01-21T04:40:46.610Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Spring Security
+2026-01-21T04:40:46.610Z [WARN] No source dependencies found for Jakarta EE. Skipping target dependency validation
+2026-01-21T04:40:46.611Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Jakarta EE
+2026-01-21T04:40:46.611Z [WARN] No source dependencies found for JUnit. Skipping target dependency validation
+2026-01-21T04:40:46.612Z [INFO] validateAndUpdateTargets, targets: [object Object], group:JUnit
+2026-01-21T04:40:46.613Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Java
+2026-01-21T04:40:46.613Z [INFO] validateAndUpdateTargets, userTargets: [object Object]
+2026-01-21T04:40:46.615Z [INFO] Target Java version: 21
+2026-01-21T04:40:46.616Z [INFO] [Environment] Running command (Java 21): java -version
+java version "21.0.9" 2025-10-21 LTS
+Java(TM) SE Runtime Environment (build 21.0.9+7-LTS-338)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.9+7-LTS-338, mixed mode, sharing)
+2026-01-21T04:40:47.350Z [INFO] [JdkEnvironment] Got real Java version: 21.0.9
+2026-01-21T04:40:47.350Z [INFO] Target JDK: {"name":"java","path":"C:\\Program Files\\Java\\jdk-21\\bin","version":"21"}
+2026-01-21T04:40:47.351Z [INFO] Upgrade options: {
+  "workingBranch": "appmod/java-upgrade-20260121043246",
+  "runTests": true,
+  "target": {
+    "javaVersion": "21",
+    "dependencies": [
+      {
+        "name": "Java",
+        "groupId": "java",
+        "artifactId": "*",
+        "version": "21",
+        "recipes": [
+          {
+            "id": "com.microsoft.java.UpgradeToJava21",
+            "name": "Upgrade from Java 8 to Java 21",
+            "description": "Migrate Java 8 to Java 21.",
+            "url": "https://docs.openrewrite.org/recipes/java/migrate/UpgradeToJava21",
+            "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.migrate.UpgradeToJava21` in recipe lib `org.openrewrite.recipe:rewrite-migrate-java:2.31.1` to make initial code changes for upgrading Java project to Java 21 from any previous version larger than Java 8.\n"
+          }
+        ],
+        "supportedSources": [
+          {
+            "groupId": "java",
+            "artifactId": "*",
+            "version": ">=8 <21"
+          },
+          {
+            "name": "Java",
+            "groupId": "java",
+            "artifactId": "*",
+            "version": "11",
+            "recipes": [
+              {
+                "id": "com.microsoft.java.UpgradeToJava11",
+                "name": "Upgrade from Java 8 to Java 11",
+                "description": "Migrate Java 8 to Java 11.",
+                "url": "https://docs.openrewrite.org/recipes/java/migrate/java8tojava11",
+                "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.migrate.Java8toJava11` in recipe lib `org.openrewrite.recipe:rewrite-migrate-java:2.31.1` to make initial code changes for upgrading Java project to Java 11 from any previous version larger than Java 8.\n"
+              }
+            ],
+            "supportedSources": [
+              {
+                "groupId": "java",
+                "artifactId": "*",
+                "version": ">=8 <11"
+              }
+            ],
+            "effects": [
+              {
+                "groupId": "java",
+                "artifactId": "*",
+                "version": "11"
+              }
+            ]
+          },
+          {
+            "name": "Java",
+            "groupId": "java",
+            "artifactId": "*",
+            "version": "17",
+            "recipes": [
+              {
+                "id": "com.microsoft.java.UpgradeToJava17",
+                "name": "Upgrade from Java 8 to Java 17",
+                "description": "Migrate Java 8 to Java 17.",
+                "url": "https://docs.openrewrite.org/recipes/java/migrate/UpgradeToJava17",
+                "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.migrate.UpgradeToJava17` in recipe lib `org.openrewrite.recipe:rewrite-migrate-java:2.31.1` to make initial code changes for upgrading Java project to Java 17 from any previous version larger than Java 8.\n"
+              }
+            ],
+            "supportedSources": [
+              {
+                "groupId": "java",
+                "artifactId": "*",
+                "version": ">=8 <17"
+              },
+              {
+                "name": "Java",
+                "groupId": "java",
+                "artifactId": "*",
+                "version": "11",
+                "recipes": [
+                  {
+                    "id": "com.microsoft.java.UpgradeToJava11",
+                    "name": "Upgrade from Java 8 to Java 11",
+                    "description": "Migrate Java 8 to Java 11.",
+                    "url": "https://docs.openrewrite.org/recipes/java/migrate/java8tojava11",
+                    "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.migrate.Java8toJava11` in recipe lib `org.openrewrite.recipe:rewrite-migrate-java:2.31.1` to make initial code changes for upgrading Java project to Java 11 from any previous version larger than Java 8.\n"
+                  }
+                ],
+                "supportedSources": [
+                  {
+                    "groupId": "java",
+                    "artifactId": "*",
+                    "version": ">=8 <11"
+                  }
+                ],
+                "effects": [
+                  {
+                    "groupId": "java",
+                    "artifactId": "*",
+                    "version": "11"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "groupId": "java",
+                "artifactId": "*",
+                "version": "17"
+              }
+            ]
+          }
+        ],
+        "effects": [
+          {
+            "groupId": "java",
+            "artifactId": "*",
+            "version": "21"
+          }
+        ]
+      }
+    ],
+    "jdk": {
+      "name": "java",
+      "path": "C:\\Program Files\\Java\\jdk-21\\bin",
+      "version": "21"
+    }
+  },
+  "guidelines": ""
+}
+2026-01-21T04:40:47.351Z [INFO] Project configuration and upgrade options initialized successfully.
+2026-01-21T04:40:47.521Z [INFO]  M backend/springapp/src/main/resources/application.properties
+
+2026-01-21T04:40:48.010Z [INFO] Saved working directory and index state On main: Stash changes before upgrade
+
+2026-01-21T04:40:48.256Z [INFO] There are  changed files found under "c:\Users\mugun\OneDrive\Desktop\BashrakAi\bhasharakshak-ai\backend\springapp"
+2026-01-21T04:40:48.257Z [INFO] There are uncommitted changes in the project before upgrading, which have been stashed according to user setting "appModernization.uncommittedChangesAction".
+2026-01-21T04:40:48.258Z [INFO] working tree is cleaned.
+2026-01-21T04:40:48.259Z [INFO] Start prechecking...
+2026-01-21T04:42:26.456Z [INFO] Precheck completed successfully.
+2026-01-21T04:42:26.644Z [INFO] main
+
+2026-01-21T04:42:26.658Z [INFO] Create or reuse the working branch appmod/java-upgrade-20260121043246
+2026-01-21T04:42:27.060Z [ERROR] Switched to a new branch 'appmod/java-upgrade-20260121043246'
+
+2026-01-21T04:42:27.074Z [INFO] Switched the working branch from main to appmod/java-upgrade-20260121043246
+2026-01-21T04:42:27.075Z [INFO] Git working branch is set up.
+2026-01-21T04:42:27.222Z [INFO] a7c1efc5f4866b26e1a9e154a06af20d556efc66
+

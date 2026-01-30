@@ -1,0 +1,7 @@
+2026-01-21T04:40:48.365Z [INFO] [MavenBuildTool] Getting build errors of c:\Users\mugun\OneDrive\Desktop\BashrakAi\bhasharakshak-ai\backend\springapp using Maven
+2026-01-21T04:40:48.367Z [INFO] [Environment] Running command (Java 17): mvnw clean test-compile -q -B -fn
+2026-01-21T04:41:01.849Z [INFO] [MavenBuildTool] parsing compilation errors.
+2026-01-21T04:41:01.851Z [INFO] [BaseBuildTool] Found 1 modules: .
+2026-01-21T04:41:01.858Z [INFO] [BaseBuildTool] Finish counting Java and class files
+2026-01-21T04:41:01.859Z [INFO] [MavenBuildTool] Cleaning c:\Users\mugun\OneDrive\Desktop\BashrakAi\bhasharakshak-ai\backend\springapp using Maven
+2026-01-21T04:41:01.862Z [INFO] [Environment] Running command (Java 17): mvnw clean -q -B -fn

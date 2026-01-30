@@ -1,0 +1,12 @@
+com\bhasharakshak\controller\TranslationController.class
+com\bhasharakshak\service\AIService.class
+com\bhasharakshak\service\StorageService.class
+com\bhasharakshak\repository\AssetRepository.class
+com\bhasharakshak\config\SecurityConfig.class
+com\bhasharakshak\controller\SearchController.class
+com\bhasharakshak\config\GlobalCorsConfig.class
+com\bhasharakshak\model\LanguageAsset.class
+com\bhasharakshak\controller\HealthController.class
+com\bhasharakshak\config\WebConfig.class
+com\bhasharakshak\BhasharakshakApplication.class
+com\bhasharakshak\controller\FileUploadController.class

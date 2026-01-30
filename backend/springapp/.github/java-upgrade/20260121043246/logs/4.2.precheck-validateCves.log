@@ -1,0 +1,40 @@
+2026-01-21T04:41:05.311Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-mongodb:4.0.1
+  - org.springframework.boot:spring-boot-starter-restclient:4.0.1
+  - org.springframework.boot:spring-boot-starter-security:4.0.1
+  - org.springframework.boot:spring-boot-starter-validation:4.0.1
+  - org.springframework.boot:spring-boot-starter-webmvc:4.0.1
+  - org.springframework.boot:spring-boot-starter-websocket:4.0.1
+  - org.springframework.boot:spring-boot-devtools:4.0.1
+  - org.projectlombok:lombok:1.18.42
+  - org.springframework.boot:spring-boot-starter-mongodb-test:4.0.1
+  - org.springframework.boot:spring-boot-starter-restclient-test:4.0.1
+  - org.springframework.boot:spring-boot-starter-security-test:4.0.1
+  - org.springframework.boot:spring-boot-starter-validation-test:4.0.1
+  - org.springframework.boot:spring-boot-starter-webmvc-test:4.0.1
+  - org.springframework.boot:spring-boot-starter-websocket-test:4.0.1
+  - java:*:17...
+2026-01-21T04:41:05.311Z [INFO] getting gitHub access token...
+2026-01-21T04:41:21.599Z [INFO] Processing batch 1/1, size: 15
+2026-01-21T04:41:21.602Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-mongodb:4.0.1",
+  "org.springframework.boot:spring-boot-starter-restclient:4.0.1",
+  "org.springframework.boot:spring-boot-starter-security:4.0.1",
+  "org.springframework.boot:spring-boot-starter-validation:4.0.1",
+  "org.springframework.boot:spring-boot-starter-webmvc:4.0.1",
+  "org.springframework.boot:spring-boot-starter-websocket:4.0.1",
+  "org.springframework.boot:spring-boot-devtools:4.0.1",
+  "org.projectlombok:lombok:1.18.42",
+  "org.springframework.boot:spring-boot-starter-mongodb-test:4.0.1",
+  "org.springframework.boot:spring-boot-starter-restclient-test:4.0.1",
+  "org.springframework.boot:spring-boot-starter-security-test:4.0.1",
+  "org.springframework.boot:spring-boot-starter-validation-test:4.0.1",
+  "org.springframework.boot:spring-boot-starter-webmvc-test:4.0.1",
+  "org.springframework.boot:spring-boot-starter-websocket-test:4.0.1",
+  "java:*:17"
+]
+2026-01-21T04:41:22.841Z [INFO] Fetched 0 total advisories across all pages
+2026-01-21T04:41:22.841Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-01-21T04:41:22.842Z [INFO] done getting 0 CVEs for 15 dependencies
+2026-01-21T04:41:22.842Z [INFO] calculating patched version by dep...
+2026-01-21T04:41:22.842Z [INFO] finished getting CVEs for dependencies.
